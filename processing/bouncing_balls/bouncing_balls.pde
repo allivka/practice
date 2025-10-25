@@ -22,6 +22,10 @@ void draw() {
     b.display();
   }
   
+  saveFrame("frames/frame-#########.png");
+  
+  if(keyPressed && key == 'q') exit();
+  
 }
 
 class Ball {
