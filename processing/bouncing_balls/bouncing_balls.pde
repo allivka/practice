@@ -9,6 +9,7 @@ int n = int(random(3, 10));
 Ball[] balls = new Ball[n];
 
 void setup() {
+  frameRate(60);
   size(1000, 500);
   for(int i = 0; i < balls.length; i++) {
     balls[i] = new Ball(random(highX), random(highY), random(1, 10), random(30, 50), color(random(255), random(255), random(255)));
